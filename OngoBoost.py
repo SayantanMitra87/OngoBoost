@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 from sklearn.model_selection import train_test_split
 
 # my app’s title
-st.title('Ongo-Total Run Experience Subscription Enhancement')
+st.title('OngoBoost: Subscribe Today Run Tomorrow!')
 
 st.header("Upload New Users")
 csv_file = st.file_uploader(
