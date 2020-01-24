@@ -8,7 +8,7 @@ import plotly as pt
 import matplotlib.pyplot as plt
 from collections import Counter
 import seaborn as sns
-import pandas_profiling as pf
+#import pandas_profiling as pf
 import plotly.express as px
 import plotly.graph_objects as go
 sns.set_style("darkgrid")
