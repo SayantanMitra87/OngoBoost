@@ -19,18 +19,53 @@ warnings.filterwarnings('ignore')
 from sklearn.model_selection import train_test_split
 
 # my app’s title
-st.title('OngoBoost: Subscribe Today Run Tomorrow!')
+#st.title('Ongo-Total Run Experience Subscription Enhancement')
+#st.markdown("""# **OngoBoost-Total Run Experience Subscription Enhancement**""")
 
-st.header("Upload New Users")
-csv_file = st.file_uploader(
-    label="Upload a CSV file", type=["csv"], encoding="utf-8"
-)
+st.markdown("""
+<style>
+body{
+    #color:;
+    background-color: #9bd7d7;
+}
+</style>
+""",unsafe_allow_html=True)
 
+#st.markdown("""# ** **""")#ff8c69
+
+st.markdown("<h1 style='text-align: center; color: ;'><b>OngoBoost: Subscribe Today Run Tomorrow!</b></h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: left; color: ;'><b></b></h3>", unsafe_allow_html=True)
+#st.markdown("<h3 style='text-align: left; color: ;'><b></b></h3>", unsafe_allow_html=True)
+
+#st.title("OngoBoost-Subscribe Today Run Tomorrow")
+#st.markdown("<h1 style='text-align: center; color: red;'></h1>", unsafe_allow_html=True)
+#st.markdown(<style>h1{color: red}='text-align: center; color: red;'>, unsafe_allow_html=True)
+#st.header("Upload New Users")
+
+st.markdown("<h4 style='text-align: left; color: ;'><b>Upload New Users</b></h4>", unsafe_allow_html=True)
+
+upload_flag = st.radio("Upload New User csv", ("Yes, upload new user data", "No, use preloaded data"), index=1)
+
+if upload_flag=="Yes, upload new user data":
+    csv_file = st.file_uploader(label="", type=["csv"], encoding="utf-8")#Upload a CSV file
+    if csv_file is not None:
+        data = pd.read_csv(csv_file)
+        #if st.checkbox("Show data"):
+        st.dataframe(data)
+
+else:
+    def get_data():
+        #url = r"test_streamlit.csv"
+        #path = '/Users/sayantan/Desktop/test_streamlit.csv'
+        path = 'test_streamlit.csv'
+        return pd.read_csv(path)
+    data = get_data()
+    st.dataframe(data.head())
 #try:
-if csv_file is not None:
-    data = pd.read_csv(csv_file)
-    #if st.checkbox("Show data"):
-    st.dataframe(data)
+
+
+
+
 
     num_col = ['metric_started_app_session_week1','metric_started_app_session_week2',
             'metric_started_app_session_week3','metric_started_app_session_week4',
@@ -95,5 +130,5 @@ if csv_file is not None:
     else:
         st.write("")
 
-else:
-    st.write("")
+#else:
+#    st.write("")
