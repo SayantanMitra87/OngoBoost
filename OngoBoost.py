@@ -26,7 +26,7 @@ st.markdown("""
 <style>
 body{
     #color:;
-    background-color: #FEF2F2;
+    background-color: #EAF1FC;
 }
 </style>
 """,unsafe_allow_html=True)
