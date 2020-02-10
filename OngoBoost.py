@@ -132,7 +132,7 @@ else:
         
         
 st.markdown("""https://docs.google.com/presentation/d/e/2PACX-1vRZfuQaQSz6L5F23l_E6SmhuNUJLGYOUdL4QYtwPplWfnhijze0ZteVXZkx8jWhD2BxJGn6WznXY_co/pub?start=false&loop=false&delayms=3000""",unsafe_allow_html=True)
-
+st.markdown("""Created by Sayantan Mitra, Insight Health Data Sciecne Fellow, Boston, MA""")
 
 #else:
 #    st.write("")
