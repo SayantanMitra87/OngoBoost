@@ -129,6 +129,10 @@ else:
 
     else:
         st.write("")
+        
+        
+st.markdown("""<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZfuQaQSz6L5F23l_E6SmhuNUJLGYOUdL4QYtwPplWfnhijze0ZteVXZkx8jWhD2BxJGn6WznXY_co/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="329" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>""",unsafe_allow_html=True)
+
 
 #else:
 #    st.write("")
