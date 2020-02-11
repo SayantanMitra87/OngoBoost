@@ -98,7 +98,7 @@ else:
     randomforest = joblib.load('randomforest_prediction.joblib')
 
 
-    cb = st.checkbox("""You chose to find non-paying customers that have subscription probability between""")
+    cb = st.checkbox("""Chose subscription probability range to identify customers for promotion""")
 
 
     if cb:
@@ -107,14 +107,14 @@ else:
         min_value=1.0,
         max_value=100.0,
         step=1.0,
-        value=20.0,
+        value=80.0,
         )
         LESS_THAN_slider = st.slider(
         "Less than",
         min_value=1.0,
         max_value=100.0,
         step=1.0,
-        value=60.0,
+        value=100.0,
         )
         predic_proba_subs = pd.DataFrame(randomforest.predict_proba(X), columns=['Non-subscribed', 'Subscription_Probability (%)'])
         predic_proba_subs = pd.DataFrame(predic_proba_subs.iloc[:,-1],columns=['Subscription_Probability (%)'])*100
