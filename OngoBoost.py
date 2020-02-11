@@ -44,7 +44,7 @@ st.markdown("<h3 style='text-align: left; color: ;'><b></b></h3>", unsafe_allow_
 
 st.markdown("<h4 style='text-align: left; color: ;'><b>Upload New Users</b></h4>", unsafe_allow_html=True)
 
-upload_flag = st.radio("Upload New User csv", ("Yes, upload new user data", "No, use preloaded data"), index=1)
+upload_flag = st.radio("", ("Yes, upload new user data", "No, use preloaded data"), index=1)
 
 if upload_flag=="Yes, upload new user data":
     csv_file = st.file_uploader(label="", type=["csv"], encoding="utf-8")#Upload a CSV file
