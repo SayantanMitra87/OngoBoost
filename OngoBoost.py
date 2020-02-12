@@ -134,7 +134,7 @@ else:
 #Goodreads](https://www.goodreads.com/)
 st.markdown('<span style="font-size:12pt;">[Slides](https://docs.google.com/presentation/d/e/2PACX-1vRZfuQaQSz6L5F23l_E6SmhuNUJLGYOUdL4QYtwPplWfnhijze0ZteVXZkx8jWhD2BxJGn6WznXY_co/embed?start=false&loop=false&delayms=3000)</span><br><br>', unsafe_allow_html=True)
 #st.markdown("""[Slides](<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZfuQaQSz6L5F23l_E6SmhuNUJLGYOUdL4QYtwPplWfnhijze0ZteVXZkx8jWhD2BxJGn6WznXY_co/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="329" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>)""",unsafe_allow_html=True)
-st.markdown("""##### Created by Sayantan Mitra, Insight Data Science Fellow, Boston, MA""")#,unsafe_allow_html=True)
+st.markdown("""###### Created by Sayantan Mitra, Insight Data Science Fellow, Boston, MA""")#,unsafe_allow_html=True)
         
 #st.markdown("""https://docs.google.com/presentation/d/e/2PACX-1vRZfuQaQSz6L5F23l_E6SmhuNUJLGYOUdL4QYtwPplWfnhijze0ZteVXZkx8jWhD2BxJGn6WznXY_co/pub?start=false&loop=false&delayms=3000""",unsafe_allow_html=True)
 #st.markdown("""Created by Sayantan Mitra, Insight Health Data Sciecne Fellow, Boston, MA"""
